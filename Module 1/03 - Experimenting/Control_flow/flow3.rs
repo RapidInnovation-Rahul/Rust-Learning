@@ -5,6 +5,6 @@ fn main() {
     while index < 5 {
         println!("the value is: {}", a[index]);
 
-        index + 1;
+        index+=1;
     }
 }

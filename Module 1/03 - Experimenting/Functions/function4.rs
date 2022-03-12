@@ -3,17 +3,20 @@
 
 fn main() {
     let original_price = 51;
+    let op = 50;
     println!("Your sale price is {}", sale_price(original_price));
+    println!("Your sale price is {}", sale_price(op));
 }
 
-fn sale_price(price: i32) -> {
+fn sale_price(price: u32) -> u32 {
     if is_even(price) {
-        price - 10
+        return price - 10;
     } else {
-        price - 3
+        return price - 3;
     }
 }
 
-fn is_even(num: i32) -> bool {
-    num % 2 == 0
+fn is_even(num: u32) -> bool {
+    if num % 2 == 0 {return true}
+    return false;
 }
